@@ -1,0 +1,10 @@
+# Ignore dependency folders
+Frontend/node_modules/
+Backend/node_modules/
+
+# General ignores
+node_modules/
+dist/
+build/
+.vscode/
+.env
