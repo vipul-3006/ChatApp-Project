@@ -86,6 +86,6 @@ app.post('/api/session/:id/message', (req, res) => {
 });
 
 // Start Backend
-app.listen(PORT, () => {
-  console.log(`Mock Chat API running at http://localhost:${PORT}`);
+app.listen(process.env.PORT || 5000, () => {
+  console.log("Server running on port", process.env.PORT || 5000);
 });
