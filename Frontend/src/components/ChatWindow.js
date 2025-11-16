@@ -15,7 +15,7 @@ function ChatWindow() {
 
   // Load session messages
   useEffect(() => {
-    fetch(`http://localhost:5000/api/session/${sessionId}`)
+    fetch(`https://chatapp-project-1.onrender.com/api/session/${sessionId}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.session?.messages) {

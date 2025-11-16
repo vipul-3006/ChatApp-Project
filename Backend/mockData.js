@@ -67,7 +67,7 @@ function generateMockResponse(question) {
   // -----------------------------
   // 1️⃣ GREETINGS
   // -----------------------------
-  if (["hi", "hello", "hey", "yo"].includes(q)) {
+  if (["hlo","hi", "hello", "hey", "yo"].includes(q)) {
     return { text: "Hello! How can I help you today?", structured: null };
   }
 
