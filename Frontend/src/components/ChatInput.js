@@ -9,7 +9,7 @@ function ChatInput({ sessionId, onNewMessage }) {
     // Add user message immediately
     onNewMessage({ sender: "You", text });
 
-    fetch(`http://localhost:5000/api/session/${sessionId}/message`, {   // FIXED URL
+    fetch(`https://chatapp-project-1.onrender.com/api/session/${sessionId}/message`, {   // FIXED URL
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question: text })

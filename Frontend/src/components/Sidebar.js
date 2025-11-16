@@ -6,14 +6,14 @@ function Sidebar({ open, onClose }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/sessions")
+    fetch("https://chatapp-project-1.onrender.com/api/sessions")
       .then(res => res.json())
       .then(data => setSessions(data.sessions))
       .catch(() => {});
   }, []);
 
   const createNewChat = () => {
-    fetch("http://localhost:5000/api/new-chat")
+    fetch("https://chatapp-project-1.onrender.com/api/new-chat")
       .then(res => res.json())
       .then(data => {
         navigate(`/chat/${data.session.id}`);
